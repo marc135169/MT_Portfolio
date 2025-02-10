@@ -1,1 +1,67 @@
 @import "tailwindcss";
+@tailwind utilities;
+
+@font-face {
+    font-family: 'JetBrains Mono Regular';
+    src:    url('../public/font/JetBrainsMono-2.304/fonts/webfonts/JetBrainsMono-Regular.woff2') format('truetype'),
+            url('../public/font/JetBrainsMono-2.304/fonts/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+
+}
+*{
+    font-family: 'JetBrains Mono Regular', serif;
+}
+
+body {
+    background-color: #001932;
+}
+
+.logo-spin {
+  animation: logo-spin 4s linear infinite;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nav-link {
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+    color: white;
+    text-shadow:
+            -1px -1px 0 #E94939FF,
+            1px -1px 0 #E94939FF,
+            -1px  1px 0 #E94939FF,
+            1px  1px 0 #E94939FF,
+            -2px -2px 0 #E94939FF,
+            2px -2px 0 #E94939FF,
+            -2px  2px 0 #E94939FF,
+            2px  2px 0 #E94939FF,
+            -3px -3px 0 #E94939FF,
+            3px -3px 0 #E94939FF,
+            -3px  3px 0 #E94939FF,
+            -3px  3px 0 #E94939FF,
+            -4px -4px 0 #E94939FF,
+            4px -4px 0 #E94939FF,
+            -4px  4px 0 #E94939FF,
+            -4px  4px 0 #E94939FF,
+            -5px -5px 0 #E94939FF,
+            5px -5px 0 #E94939FF,
+            -5px  5px 0 #E94939FF,
+            -5px  5px 0 #E94939FF;
+
+}
+
+.Icon:hover{
+    color: rgb(233, 73, 57);
+}
+.sunRed{
+    color: rgb(233, 73, 57);
+}
+
