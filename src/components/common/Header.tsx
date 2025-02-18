@@ -10,8 +10,8 @@ export default function Header () {
                 /></a>
 
                 <ul className="nav-links text-white flex direction-row gap-x-3 font-extrabold text-[12px] mx-[1rem]">
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Accueil</a>
+                    <li className="nav-item ">
+                        <a className="nav-link " href="#">Accueil</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="#">A propos</a>

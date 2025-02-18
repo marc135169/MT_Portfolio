@@ -7,13 +7,13 @@ export default function Footer () {
             </div>
             <div className="flex gap-4 ">
                 <a href="https://github.com/marc135169" target="_blank" rel="noopener noreferrer">
-                    <i className="Icon fab fa-github text-xl"></i>
+                    <i className="icon fab fa-github text-xl"></i>
                 </a>
                 <a href="mailto:marc.tetart@proton.me">
-                    <i className="Icon fas fa-envelope text-xl"></i>
+                    <i className="icon fas fa-envelope text-xl"></i>
                 </a>
                 <a href="https://linkedin.com/in/marc-tetart" target="_blank" rel="noopener noreferrer">
-                    <i className="Icon fab fa-linkedin text-xl"></i>
+                    <i className="icon fab fa-linkedin text-xl"></i>
                 </a>
             </div>
         </footer>

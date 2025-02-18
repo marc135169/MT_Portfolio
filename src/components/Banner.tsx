@@ -1,12 +1,13 @@
 export default function Banner () {
 
     return (
-        <section className="banner bg-[url(../../public/img/Banner.png)]
+        <section className="banner bg-[url(/img/Banner.png)]
         bg-cover bg-center w-[100vw] h-[190px] mt-16 inset-shadow">
-            <div className="banner-content flex flex-col text-white h-[100%] items-end">
-                <h1 className="banner-name text-[1rem] mt-[0.5rem] mr-[7rem]">TETART <span className="sunRed">Marc</span></h1>
-                <p className="banner-description mr-[3rem]">Developer <span className="sunRed">Web</span></p>
-                <p className="banner-description mr-[1rem]"><span className="sunRed">Game</span> Developer</p>
+            <div className="banner-content flex flex-col  h-[100%] items-end text-white">
+                <h1 className="banner-name text-[1rem] mt-[1.5rem] mr-[7rem]">TETART <span className="text-">Marc</span></h1>
+                <p className="banner-description mr-[3rem]"><span className="text-primary">Developer </span> Web</p>
+                <p className="banner-description mr-[1rem]"> Game <span className="text-primary"> Developer </span></p>
+
             </div>
         </section>
     )
