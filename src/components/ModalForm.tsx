@@ -1,4 +1,4 @@
-import {ChangeEvent, FormEvent, useState} from 'react';
+import React, {ChangeEvent, FormEvent, useState} from 'react';
 
 interface FormData {
     name: string;
@@ -7,7 +7,12 @@ interface FormData {
     message: string;
 }
 
-export default function ModalForm() {
+type ModalFormProps = {
+    toggleModal: boolean;
+    setToggleModal: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export default function ModalForm({toggleModal, setToggleModal}: ModalFormProps) {
     const [formData, setFormData] = useState<FormData>({
         name: '',
         email: '',
@@ -34,11 +39,18 @@ export default function ModalForm() {
             subject: '',
             message: ''
         });
+        setToggleModal(false);
+    };
+
+    const handleClickOutside = (e: React.MouseEvent<HTMLDivElement>) => {
+        if (e.target === e.currentTarget) {
+            setToggleModal(false);
+        }
     };
 
     return (
-        <div className="modalForm absolute w-full h-full flex justify-center items-center bg-bg-black ">
-            <form onSubmit={handleSubmit} className="w-[350px] p-4 pt-4 text-primary flex flex-col bg-secondary rounded border-solid border-2" id="form">
+        <div onClick={handleClickOutside} className={`modalForm absolute w-full h-full justify-center items-center bg-bg-black ${toggleModal ? 'flex' : 'hidden'}`}>
+            <form onSubmit={handleSubmit} className="w-[350px] p-4 pt-4 text-primary flex flex-col bg-secondary rounded border-solid border-2 relative" id="form">
                 <div className="mb-4">
                     <label htmlFor="name" className="block mb-2">Nom:</label>
                     <input
@@ -101,6 +113,7 @@ export default function ModalForm() {
                 >
                     Envoyer
                 </button>
+                <i className="fa-solid fa-xmark absolute right-4 text-2xl" onClick={() => setToggleModal(false)}></i>
             </form>
         </div>
     );
