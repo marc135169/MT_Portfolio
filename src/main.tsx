@@ -12,6 +12,8 @@ import App from './App.tsx';
 
 // Children
 import Home from './pages/Home.tsx';
+import Project from "./pages/Project.tsx";
+import CV from "./pages/CV.tsx";
 
 const router = createBrowserRouter([
     {
@@ -21,14 +23,14 @@ const router = createBrowserRouter([
                 path: '/',
                 element: <Home />,
             },
-            /*{
-                path: '/recipe/:id',
-                element: < />,
+            {
+                path: '/project',
+                element: < Project/>,
             },
             {
-                path: '*',
-                element: < />,
-            },*/
+                path: '/cv',
+                element: < CV/>,
+            },
         ],
     },
 ]);

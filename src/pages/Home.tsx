@@ -52,7 +52,7 @@ export default function Home() {
                 </section>
                 <section className="about flex flex-col items-center justify-center">
                     <div className="about-content flex flex-col items-center justify-center">
-                        <h2 className="about-content-title mb-[1rem] text-primary">A propos de moi</h2>
+                        <h2 className="about-content-title mb-[1rem] text-primary" id="aboutMe">A propos de moi</h2>
                         <p className="about-content-text mb-[1rem]">Anciennement technicien informatique, j’ai choisi de
                             suivre ma passion en me reconvertissant dans le développement de jeux vidéo et l'intégration
                             web.
