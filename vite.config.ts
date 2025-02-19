@@ -7,4 +7,12 @@ export default defineConfig({
   plugins: [
       react(),
       tailwindcss()],
+    optimizeDeps: {
+        include: ['react-pdf'],
+    },
+    server: {
+        watch: {
+            usePolling: true,
+        },
+    },
 })

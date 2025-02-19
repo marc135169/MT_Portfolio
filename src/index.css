@@ -1,1 +1,73 @@
 @import "tailwindcss";
+@tailwind utilities;
+
+@font-face {
+    font-family: 'JetBrains Mono Regular';
+    src:    url('/public/font/JetBrainsMono-2.304/fonts/webfonts/JetBrainsMono-Regular.woff2') format('truetype'),
+            url('/public/font/JetBrainsMono-2.304/fonts/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+
+}
+
+@theme {
+    --font-jetbrain: "JetBrains Mono Regular", "serif";
+    --breakpoint-3xl: 1920px;
+    --color-primary: #ef4b39;
+    --color-secondary: #001932;
+    --color-tertiary: #B98D74;
+    --color-quaternary: #CFCBAB;
+    --color-quinary: #E3E9DD;
+    --color-bg-black: rgba(0, 0, 0, 0.6);
+}
+
+*{
+    font-family: 'JetBrains Mono Regular', serif;
+}
+
+body {
+    background-color: var(--color-secondary);
+}
+
+.logo-spin {
+  animation: logo-spin 4s linear infinite;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nav-link {
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+    color: white;
+    text-shadow:
+            -1px -1px 0 var(--color-primary),
+            1px -1px 0 var(--color-primary),
+            -1px  1px 0 var(--color-primary),
+            1px  1px 0 var(--color-primary),
+            -2px -2px 0 var(--color-primary),
+            2px -2px 0 var(--color-primary),
+            -2px  2px 0 var(--color-primary),
+            2px  2px 0 var(--color-primary),
+            -3px -3px 0 var(--color-primary),
+            3px -3px 0 var(--color-primary),
+            -3px  3px 0 var(--color-primary),
+            -3px  3px 0 var(--color-primary),
+            -4px -4px 0 var(--color-primary),
+            4px -4px 0 var(--color-primary),
+            -4px  4px 0 var(--color-primary),
+            -4px  4px 0 var(--color-primary),
+            -5px -5px 0 var(--color-primary),
+            5px -5px 0 var(--color-primary),
+            -5px  5px 0 var(--color-primary),
+            -5px  5px 0 var(--color-primary);
+}
+.icon:hover{
+    color: var(--color-primary);
+}
