@@ -8,7 +8,7 @@ export default function CV() {
             >
                 Télécharger le CV
             </a>
-            <img src="/img/CV%20Marc.webp" alt="Cv Tetart Marc"/>
+            <img src="/img/CV%20Marc.webp" alt="Cv Tetart Marc" className="max-w-[90%]"/>
 
         </main>
     )
