@@ -48,7 +48,7 @@ export default function Header () {
                         className="logo w-[3.125rem] h-[3.125rem] ml-[1rem] my-[0.5rem] logo-spin"
                     /></a>
 
-                    <ul className="nav-links text-white flex direction-row gap-x-3 font-extrabold text-[11px] mx-[1rem]">
+                    <ul className="nav-links text-quinary flex direction-row gap-x-3 font-extrabold text-[11px] mx-[1rem]">
                         <li className="nav-item ">
                             <Link to={"/"} className="nav-link" onClick={handleTop}>Accueil</Link>
                         </li>
@@ -56,7 +56,7 @@ export default function Header () {
                             <p className="nav-link" onClick={() => handleNavigation("aboutMe")}>A propos</p>
                         </li>
                         <li className="nav-item">
-                            <Link to={"/project"} className="nav-link">Projet</Link>
+                            <Link to={"/project"} className="nav-link">Projets</Link>
                         </li>
                         <li className="nav-item">
                             <Link to={"/cv"} className="nav-link">CV</Link>

@@ -65,7 +65,7 @@ export default function Home() {
                     </div>
                     <div className="pics-mobile aspect-square w-40 h-40 my-1">
                         <img src="/img/PhotoMobile.webp" alt="photo portrait Tetart Marc"
-                             className="object-cover w-full h-full object-center ring-2 ring-primary" />
+                             className="object-cover w-full h-full object-center ring-3 ring-primary rounded-xs" />
                     </div>
                 </section>
             </main>

@@ -1,16 +1,26 @@
 [
   {
-    "title": "Portfolio V2",
-    "date": "2024-02",
+    "title": "Site Photographe",
+    "date": "02-2024",
     "description": "Refonte de mon portfolio avec React et Tailwind.",
     "technologies": ["React", "TypeScript", "Tailwind"],
-    "image": "/img/Banner.png"
+    "image": "/img/Banner.png",
+    "details": "Mon travail a était de faire une refonte presque total du site en gardant sont aspect d'origine, un site a la base fait avec bootstrap que j'ai nétoyer un maximum avec purge css et autre",
+    "screenshot": "/img/Banner.png",
+    "newSkills": ["Référencement", "Optimisation", "Intégration"],
+    "goal": "Avoir un score lighthouse de 90+ dans toutes les catégories",
+    "movie": ""
   },
   {
     "title": "E-commerce App",
-    "date": "2023-12",
+    "date": "12-2023",
     "description": "Application e-commerce avec Stripe et Next.js.",
     "technologies": ["Next.js", "Stripe", "Firebase"],
-    "image": "/img/Banner.png"
+    "image": "/img/Banner.png",
+    "details": "Mon travail a était de faire une refonte presque total du site en gardant sont aspect d'origine, un site a la base fait avec bootstrap que j'ai nétoyer un maximum avec purge css et autre",
+    "screenshot": "/img/Banner.png",
+    "newSkills": ["Référencement", "Optimisation", "Intégration"],
+    "goal": "Avoir un score lighthouse de 90+ dans toutes les catégories",
+    "movie": ""
   }
 ]

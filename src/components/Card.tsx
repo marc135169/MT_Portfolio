@@ -1,16 +1,13 @@
-import React from "react";
+import {ProjectInterface} from "../interfaces/ProjectTypes.ts"
 
-interface ProjectProps {
-    title: string;
-    date: string;
-    description: string;
-    technologies: string[];
-    image: string;
-}
+export default function Card({ title, date, description, technologies, image} : ProjectInterface) {
 
-const Card: React.FC<ProjectProps> = ({ title, date, description, technologies, image }) => {
+    function handleClick() {
+
+    }
+
     return (
-        <div className="bg-primary shadow-lg rounded-xl p-4 w-60">
+        <div className="bg-primary shadow-lg rounded-xl p-4 w-60" onClick={handleClick}>
             <img src={image} alt={title} className="w-full h-40 object-cover rounded-md" />
             <h3 className="text-xl font-bold text-secondary mt-2">{title}</h3>
             <p className="text-quinary text-sm">{date}</p>
@@ -26,4 +23,4 @@ const Card: React.FC<ProjectProps> = ({ title, date, description, technologies, 
     );
 };
 
-export default Card;
+
