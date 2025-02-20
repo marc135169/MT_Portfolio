@@ -25,11 +25,11 @@ const router = createBrowserRouter([
             },
             {
                 path: '/project',
-                element: < Project/>,
+                element: <Project />,
             },
             {
                 path: '/cv',
-                element: < CV/>,
+                element: <CV />,
             },
         ],
     },
