@@ -42,6 +42,7 @@ body {
 
 .nav-link {
     transition: all 0.2s ease;
+
 }
 
 .nav-link:hover {
@@ -68,6 +69,9 @@ body {
             -5px  5px 0 var(--color-primary),
             -5px  5px 0 var(--color-primary);
 }
+
+
+
 .icon:hover{
     color: var(--color-primary);
 }
