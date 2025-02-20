@@ -4,27 +4,13 @@
     "date": "2024-02",
     "description": "Refonte de mon portfolio avec React et Tailwind.",
     "technologies": ["React", "TypeScript", "Tailwind"],
-    "image": "/public/img/Banner.png"
+    "image": "/img/Banner.png"
   },
   {
     "title": "E-commerce App",
     "date": "2023-12",
     "description": "Application e-commerce avec Stripe et Next.js.",
     "technologies": ["Next.js", "Stripe", "Firebase"],
-    "image": "/public/img/Banner.png"
-  },
-  {
-    "title": "E-commerce App",
-    "date": "2023-12",
-    "description": "Application e-commerce avec Stripe et Next.js.",
-    "technologies": ["Next.js", "Stripe", "Firebase"],
-    "image": "/public/img/Banner.png"
-  },
-  {
-    "title": "E-commerce App",
-    "date": "2023-12",
-    "description": "Application e-commerce avec Stripe et Next.js.",
-    "technologies": ["Next.js", "Stripe", "Firebase"],
-    "image": "/public/img/Banner.png"
+    "image": "/img/Banner.png"
   }
 ]

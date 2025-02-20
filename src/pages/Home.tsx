@@ -63,8 +63,9 @@ export default function Home() {
                             Passionné de jeux vidéo, de golf et grand amoureux des chiens, je trouve mon inspiration
                             aussi bien dans la complexité du code que dans la nature et les loisirs qui m'entourent.</p>
                     </div>
-                    <div className="pics-mobile w-40 mb-[1rem]">
-                        <img src="/img/Photo mobile.jpg" alt="photo portrait Tetart Marc" className="ring-2 text-sunRed"/>
+                    <div className="pics-mobile aspect-square w-40 h-40 my-1">
+                        <img src="/img/PhotoMobile.webp" alt="photo portrait Tetart Marc"
+                             className="object-cover w-full h-full object-center ring-2 ring-primary" />
                     </div>
                 </section>
             </main>
