@@ -1,26 +1,30 @@
 [
   {
-    "title": "Site Photographe",
-    "date": "02-2024",
-    "description": "Refonte de mon portfolio avec React et Tailwind.",
-    "technologies": ["React", "TypeScript", "Tailwind"],
-    "image": "/img/Banner.png",
-    "details": "Mon travail a était de faire une refonte presque total du site en gardant sont aspect d'origine, un site a la base fait avec bootstrap que j'ai nétoyer un maximum avec purge css et autre",
+    "title": "Photographe Nina Carducci",
+    "date": "10-2024",
+    "description": "Refonte d'un portfolio avec React et Tailwind.",
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "image": "/img/NinaScreen.webp",
+    "details": "Mon travail consistait à optimiser le site tout en conservant son apparence d'origine. Initialement conçu avec Bootstrap, j'ai procédé à un nettoyage approfondi en utilisant PurgeCSS et d'autres techniques d'optimisation. J'ai également converti les images dans des formats plus performants comme le WebP afin d'améliorer le chargement et le référencement.",
     "screenshot": "/img/Banner.png",
     "newSkills": ["Référencement", "Optimisation", "Intégration"],
-    "goal": "Avoir un score lighthouse de 90+ dans toutes les catégories",
-    "movie": ""
+    "goal": "Obtenir un score Lighthouse de 90+ dans toutes les catégories",
+    "movie": "/movie/NinaCarducci-Site.mp4",
+    "github": "https://github.com/marc135169/OPC_Projet8_SEO",
+    "hosting": "https://opc-projet8-seo.vercel.app/"
   },
   {
-    "title": "E-commerce App",
-    "date": "12-2023",
-    "description": "Application e-commerce avec Stripe et Next.js.",
-    "technologies": ["Next.js", "Stripe", "Firebase"],
-    "image": "/img/Banner.png",
-    "details": "Mon travail a était de faire une refonte presque total du site en gardant sont aspect d'origine, un site a la base fait avec bootstrap que j'ai nétoyer un maximum avec purge css et autre",
+    "title": "Circle Tower Defense",
+    "date": "04-2024",
+    "description": "Master the Circles, Command the Battle! Jeux sous Unreal",
+    "technologies": ["C++", "Unreal"],
+    "image": "/img/CircleTD-img.webp",
+    "details": "Ce projet me tient particulièrement à cœur : il s'agit d'un jeu de type Tower Defense où le joueur incarne un personnage chargé de construire différentes tours pour défendre un cercle contre des vagues de monstres. L'aspect stratégique est essentiel, car si trop de monstres s'accumulent dans le cercle, la partie est perdue. Le défi consiste à survivre aux 100 vagues aléatoires, comprenant des boss et d'autres surprises.",
     "screenshot": "/img/Banner.png",
-    "newSkills": ["Référencement", "Optimisation", "Intégration"],
-    "goal": "Avoir un score lighthouse de 90+ dans toutes les catégories",
-    "movie": ""
+    "newSkills": ["POO", "Spline", "LineTrace"],
+    "goal": "Apprendre de nouvelles mécaniques de code",
+    "movie": "",
+    "github": "https://github.com/marc135169/CircleSiegeTD",
+    "hosting": "https://miro.com/welcomeonboard/ZzBUSkFzVG0zMGsxL0ZJT0kwdkVxLzdtVFh0UHRRb1kvZkNVQkYxWVc0dUliZEsvTm5JOHNDYmtKZSt2azBxQmkvaWd5QzJ3R0hvY1dVWDVjTSttWHFjUStaeU1kSkprVFR3ZER1R2kyQ2ZLVkc3U3FTRWllQkFHdUwza0RlMytzVXVvMm53MW9OWFg5bkJoVXZxdFhRPT0hdjE=?share_link_id=26727833551"
   }
 ]

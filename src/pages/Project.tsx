@@ -16,7 +16,7 @@ export default function Projects() {
     return (
         <>
             <section className="carousel pt-20 px-5">
-                <h2 className="text-3xl font-bold mb-6 text-primary text-center">Mes Projets</h2>
+                <h1 className="text-3xl font-bold mb-6 text-primary text-center">Mes Projets</h1>
                 <Slider onProjectSelect={handleProjectSelect}/>
             </section>
             <section
