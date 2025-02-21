@@ -10,4 +10,6 @@ export interface ProjectInterface {
     newSkills: string[];
     goal: string;
     movie: string;
+    github: string;
+    hosting: string;
 } 
