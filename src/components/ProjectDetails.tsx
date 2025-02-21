@@ -30,5 +30,3 @@ export default function ProjectDetails({ title, date, description, technologies,
         </div>
     );
 };
-
-
