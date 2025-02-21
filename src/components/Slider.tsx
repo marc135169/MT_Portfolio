@@ -1,5 +1,5 @@
 import {useRef} from "react";
-import { motion } from "framer-motion";
+/*import { motion } from "framer-motion";*/
 import projects from "../data/projects.json";
 import Card from "./Card.tsx";
 
@@ -12,20 +12,20 @@ export default function Slider({onProjectSelect}: SliderProps){
 
     return (
         <div className="overflow-hidden">
-            <motion.div
+            <div
                 ref={carouselRef}
                 className="flex gap-4"
-                drag="x"
-                dragConstraints={{ right: 0, left: -((projects.length - 1) * 160) }}
+                /*drag="x"*/
+                /*dragConstraints={{ right: 0, left: -((projects.length - 1) * 160) }}*/
             >
                 {projects.map((project, index) => (
-                    <motion.div key={index}
+                    <div key={index}
                                 className="cursor-grab"
                                 onClick={() => onProjectSelect(index)}>
                         <Card {...project} />
-                    </motion.div>
+                    </div>
                 ))}
-            </motion.div>
+            </div>
         </div>
     );
 };
