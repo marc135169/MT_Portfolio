@@ -40,7 +40,7 @@ export default function Header () {
     return (
         <>
             <header className="header w-full flex direction-row justify-between items-center bg-[#001932] fixed
-                                shadow-[0_2px_1px_2px_rgba(0,0,0,0.3)] inset-shadow">
+                                shadow-[0_2px_1px_2px_rgba(0,0,0,0.3)] inset-shadow z-10">
                 <nav className="navbar w-full flex direction-row justify-between items-center">
                     <a href="#"><img
                         src="/img/Logo.png"
