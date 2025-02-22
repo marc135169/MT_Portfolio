@@ -49,7 +49,7 @@ export default function ModalForm({toggleModal, setToggleModal}: ModalFormProps)
     };
 
     return (
-        <div onClick={handleClickOutside} className={`modalForm absolute w-full h-full justify-center items-center bg-bg-black ${toggleModal ? 'flex' : 'hidden'}`}>
+        <div onClick={handleClickOutside} className={`modalForm absolute z-100 w-full h-full justify-center items-center bg-bg-black ${toggleModal ? 'flex' : 'hidden'}`}>
             <form onSubmit={handleSubmit} className="w-[350px] p-4 pt-4 text-primary flex flex-col bg-secondary rounded border-solid border-2 relative" id="form">
                 <div className="mb-4">
                     <label htmlFor="name" className="block mb-2">Nom:</label>

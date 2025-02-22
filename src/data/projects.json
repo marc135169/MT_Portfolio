@@ -16,14 +16,14 @@
   {
     "title": "Circle Tower Defense",
     "date": "04-2024",
-    "description": "Master the Circles, Command the Battle! Jeux sous Unreal",
+    "description": "Master the Circles, Command the Battle! Développé avec Unreal",
     "technologies": ["C++", "Unreal"],
     "image": "/img/CircleTD-img.webp",
     "details": "Ce projet me tient particulièrement à cœur : il s'agit d'un jeu de type Tower Defense où le joueur incarne un personnage chargé de construire différentes tours pour défendre un cercle contre des vagues de monstres. L'aspect stratégique est essentiel, car si trop de monstres s'accumulent dans le cercle, la partie est perdue. Le défi consiste à survivre aux 100 vagues aléatoires, comprenant des boss et d'autres surprises.",
     "screenshot": "/img/Banner.png",
     "newSkills": ["POO", "Spline", "LineTrace"],
     "goal": "Apprendre de nouvelles mécaniques de code",
-    "movie": "",
+    "movie": "/movie/CircleTD.mp4",
     "github": "https://github.com/marc135169/CircleSiegeTD",
     "hosting": "https://miro.com/welcomeonboard/ZzBUSkFzVG0zMGsxL0ZJT0kwdkVxLzdtVFh0UHRRb1kvZkNVQkYxWVc0dUliZEsvTm5JOHNDYmtKZSt2azBxQmkvaWd5QzJ3R0hvY1dVWDVjTSttWHFjUStaeU1kSkprVFR3ZER1R2kyQ2ZLVkc3U3FTRWllQkFHdUwza0RlMytzVXVvMm53MW9OWFg5bkJoVXZxdFhRPT0hdjE=?share_link_id=26727833551"
   }

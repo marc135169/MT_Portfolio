@@ -10,7 +10,7 @@ export default function Slider({onProjectSelect}: SliderProps) {
     const isTouchDevice = typeof window !== 'undefined' && ('ontouchstart' in window || navigator.maxTouchPoints > 0);
 
     return (
-        <div className={isTouchDevice ? "overflow-hidden" : "null"}>
+        <div className={isTouchDevice ? "overflow-hidden" : ""}>
             {isTouchDevice ? (
                 <motion.div
                     className="flex gap-4 flex-row"

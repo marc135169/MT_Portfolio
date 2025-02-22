@@ -1,6 +1,5 @@
 export default function CV() {
-    return (
-        <main className="w-full pt-20 mb-10 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
+    return (<main className="w-full pt-20 mb-10 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
             <a
                 href="/pdf/CV Marc.pdf"
                 download
@@ -8,8 +7,7 @@ export default function CV() {
             >
                 Télécharger le CV
             </a>
-            <img src="/img/CV%20Marc.webp" alt="Cv Tetart Marc" className="max-w-[90%]"/>
+            <img src="/img/CV%20Marc.webp" alt="Cv Tetart Marc" className="max-w-[90%] xl:max-w-[50%]"/>
 
-        </main>
-    )
+        </main>)
 }
