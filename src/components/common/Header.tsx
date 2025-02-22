@@ -41,14 +41,24 @@ export default function Header () {
         <>
             <header className="header w-full flex direction-row justify-between items-center bg-[#001932] fixed
                                 shadow-[0_2px_1px_2px_rgba(0,0,0,0.3)] inset-shadow z-10">
-                <nav className="navbar w-full flex direction-row justify-between items-center">
+                <nav className="navbar w-full flex direction-row justify-between items-center xl:mx-[15%]">
                     <a href="#"><img
                         src="/img/Logo.png"
                         alt="Sunstra's Logo"
-                        className="logo w-[3.125rem] h-[3.125rem] ml-[1rem] my-[0.5rem] logo-spin"
+                        className="logo w-[3.125rem] h-[3.125rem] ml-[0.7rem] my-[0.5rem] logo-spin
+                        s:ml-8.5
+                        m:ml-13.5
+                        l:ml-18.5
+                        xl:ml-0
+                        "
+
                     /></a>
 
-                    <ul className="nav-links text-quinary flex direction-row gap-x-3 font-extrabold text-[11px] mx-[1rem]">
+                    <ul className="nav-links text-white flex direction-row gap-x-3 font-extrabold text-[11px] mx-[1rem]
+                        s:mx-10
+                        m:text-[12px] m:mx-15
+                        l:text-[18px] l:mx-[8%] l:gap-x-10
+                        xl:mx-0">
                         <li className="nav-item ">
                             <Link to={"/"} className="nav-link" onClick={handleTop}>Accueil</Link>
                         </li>
