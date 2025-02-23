@@ -2,8 +2,9 @@ import {ProjectInterface} from "../interfaces/ProjectTypes.ts"
 
 export default function ProjectDetails({ title, date, description, technologies, image, details, newSkills, goal, movie, github, hosting }: ProjectInterface){
     return (
-        <div className="bg-secondary py-4 w-full flex flex-col gap-8 items-center justify-center">
-            <img src={image} alt={title} className="w-full h-40 object-cover rounded-md" />
+        <div className="bg-secondary py-4  flex flex-col gap-8 items-center justify-center l:mx-[8%] xl:mx-[15%]">
+            <img src={image} alt={title} className="w-full h-40 object-cover rounded-md
+                                                   l:h-80" />
             <div className="flex flex-col w-full items-center">
                 <h2 className="text-xl font-bold text-primary mt-2">{title}</h2>
                 <p className="text-quinary">{date}</p>
