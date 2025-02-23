@@ -10,4 +10,5 @@ export interface ProjectInterface {
     movie: string;
     github: string;
     hosting: string;
+    status: boolean;
 } 
