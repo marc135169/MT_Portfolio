@@ -47,10 +47,9 @@ body {
 
 .nav-link {
     transition: all 0.2s ease;
-
 }
 
-.nav-link:hover {
+.nav-link:hover, .active-link {
     color: white;
     text-shadow: -1px -1px 0 var(--color-primary),
     1px -1px 0 var(--color-primary),
