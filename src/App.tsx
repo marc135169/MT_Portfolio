@@ -3,7 +3,6 @@ import Header from "./components/common/Header.tsx";
 import Footer from "./components/common/Footer.tsx";
 
 
-
 export default function App () {
 
     return (
@@ -14,3 +13,4 @@ export default function App () {
         </>
     )
 }
+

@@ -1,7 +1,8 @@
 import {ProjectInterface} from "../interfaces/ProjectTypes.ts"
 
 export default function ProjectDetails({ title, date, description, technologies, image, details, newSkills, goal, movie, github, hosting }: ProjectInterface){
-    return (
+
+ return (
         <div className="bg-secondary py-4  flex flex-col gap-8 items-center justify-center l:mx-[8%] xl:mx-[15%]">
             <img src={image} alt={title} className="w-full h-40 object-cover rounded-md
                                                    l:h-80" />
@@ -52,8 +53,8 @@ export default function ProjectDetails({ title, date, description, technologies,
                     <a href={github} className="text-secondary">Github</a>
                 </div>
                 <div className="text-secondary flex flex-row gap-2">
-                    <i className="icon fab fa-github text-xl"></i>
-                    <a href={hosting} className="text-secondary">Hébergement</a>
+                    <i className={`icon fa-solid ${title === "Circle Tower Defense" ? "fa-map" : "fa-server"} text-xl`}></i>
+                    <a href={hosting} className="text-secondary">{title === "Circle Tower Defense" ? "Mind Map" : "Hébergement"}</a>
                 </div>
             </div>
 
