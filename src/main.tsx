@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 // Style
 import './index.css';
+import 'animate.css';
 
 // Pages
 import App from './App.tsx';

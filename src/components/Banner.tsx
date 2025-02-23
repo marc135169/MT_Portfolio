@@ -4,7 +4,7 @@ export default function Banner () {
         <section className="banner bg-[url(/img/Banner.png)]
         bg-cover bg-center w-[100%] h-[190px] mt-16 inset-shadow
         l:h-[250px]">
-            <div className="banner-content flex flex-col items-end text-white
+            <div className="banner-content flex flex-col items-end text-white mx-5
                     s:mx-8
                     m:text-[1.2rem] m:mx-15
                     l:text-[25px] l:mx-[8%] l:justify-center l:my-15

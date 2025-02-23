@@ -1,7 +1,7 @@
 import {Link, useLocation, useNavigate} from "react-router-dom";
 import {useEffect, useState} from "react";
 import ModalForm from "../ModalForm.tsx";
-
+import 'animate.css'
 
 export default function Header() {
 
@@ -39,6 +39,17 @@ export default function Header() {
 
     const [toggleModal, setToggleModal] = useState(false);
 
+    const [animate, setAnimate] = useState(false);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setAnimate(true);
+            setTimeout(() => setAnimate(false), 1000);
+        }, 5000);
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (<>
             <header className="header w-full flex direction-row justify-between items-center bg-[#001932] fixed
                                 shadow-[0_2px_1px_2px_rgba(0,0,0,0.3)] inset-shadow z-10">
@@ -74,8 +85,8 @@ export default function Header() {
                         <li className={`nav-item ${isActive("/cv")}`}>
                             <Link to={"/cv"} className="nav-link" onClick={handleTop}>CV</Link>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#" onClick={() => setToggleModal(true)}>Contact </a>
+                        <li className={`nav-item ${animate ? "animate__animated animate__heartBeat" : ""}`}>
+                            <a className="nav-link " href="#" onClick={() => setToggleModal(true)}>Contact</a>
                         </li>
                     </ul>
                 </nav>

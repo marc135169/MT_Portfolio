@@ -35,7 +35,8 @@ export default function Slider({onProjectSelect}: SliderProps) {
                     {projects.map((project, index) => (
                         <div
                             key={index}
-                            className="flex-shrink-0 cursor-pointer transform transition-transform duration-300 hover:scale-105"
+                            className="flex-shrink-0 cursor-pointer
+                                        transform transition-transform duration-300 hover:scale-105"
                             onClick={() => onProjectSelect(index)}
                         >
                             <Card {...project} />

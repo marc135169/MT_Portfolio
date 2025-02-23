@@ -1,5 +1,3 @@
-
-
 export interface ProjectInterface {
     title: string;
     date: string;
