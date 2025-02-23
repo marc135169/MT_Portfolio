@@ -19,8 +19,8 @@
     --breakpoint-2xl: 1920px;
     --color-primary: #ef4b39;
     --color-secondary: #001932;
-    --color-tertiary: #B98D74;
-    --color-quaternary: #CFCBAB;
+    --color-redContrast: #E22712;
+    --color-quaternary: rgba(207, 203, 171, 0);
     --color-quinary: #E3E9DD;
     --color-bg-black: rgba(0, 0, 0, 0.6);
 }

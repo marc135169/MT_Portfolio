@@ -109,7 +109,7 @@ export default function ModalForm({toggleModal, setToggleModal}: ModalFormProps)
 
                 <button
                     type="submit"
-                    className=" text-primary px-4 py-2 self-center rounded hover:bg-primary hover:text-quinary bg-quinary font-bold"
+                    className=" text-red-400 px-4 py-2 self-center rounded hover:bg-primary hover:text-quinary bg-quinary font-bold"
                 >
                     Envoyer
                 </button>

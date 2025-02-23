@@ -8,13 +8,13 @@ export default function Footer () {
             </div>
             <div className="flex gap-4
                             l:gap-6">
-                <a href="https://github.com/marc135169" target="_blank" rel="noopener noreferrer" className="">
+                <a href="https://github.com/marc135169" aria-label="github link">
                     <i className="icon fab fa-github text-xl l:text-[2rem]"></i>
                 </a>
-                <a href="mailto:marc.tetart@proton.me">
+                <a href="mailto:marc.tetart@proton.me" aria-label="mail link">
                     <i className="icon fas fa-envelope text-xl l:text-[2rem]"></i>
                 </a>
-                <a href="https://linkedin.com/in/marc-tetart" target="_blank" rel="noopener noreferrer">
+                <a href="https://linkedin.com/in/marc-tetart" aria-label="linkdin link">
                     <i className="icon fab fa-linkedin text-xl l:text-[2rem]"></i>
                 </a>
             </div>

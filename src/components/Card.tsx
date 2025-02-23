@@ -8,8 +8,10 @@ export default function Card({ title, date, description, technologies, image, st
             <img src="/img/wipblue.png" alt="Work in progress icon"
                  className={`wip ${status ? "absolute" : "hidden"} w-50 h-50 top-0 right-[-0.5px]`}/>
             <h3 className="text-xl font-bold text-secondary mt-2">{title}</h3>
-            <p className="text-quinary text-sm">{date}</p>
-            <p className="text-quinary mt-2">{description}</p>
+            <div className="bg-secondary text-center">
+                <p className="text-white text-sm">{date}</p>
+            </div>
+            <p className="text-black mt-2">{description}</p>
             <div className="mt-3 flex flex-wrap gap-2">
                 {technologies.map((tech, index) => (
                     <span key={index} className="bg-quinary px-2 py-1 text-sm rounded-md">
