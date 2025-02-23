@@ -49,11 +49,11 @@ export default function ProjectDetails({ title, date, description, technologies,
             <div className="flex flex-col w-full items-center bg-primary rounded-md py-3">
                 <h3 className="text-secondary underline mb-3">Liens utiles</h3>
                 <div className="text-secondary flex flex-row gap-2">
-                    <i className="icon fab fa-github text-xl"></i>
+                    <i className="fab fa-github text-xl"></i>
                     <a href={github} className="text-secondary">Github</a>
                 </div>
                 <div className="text-secondary flex flex-row gap-2">
-                    <i className={`icon fa-solid ${title === "Circle Tower Defense" ? "fa-map" : "fa-server"} text-xl`}></i>
+                    <i className={`fa-solid ${title === "Circle Tower Defense" ? "fa-map" : "fa-server"} text-xl`}></i>
                     <a href={hosting} className="text-secondary">{title === "Circle Tower Defense" ? "Mind Map" : "Hébergement"}</a>
                 </div>
             </div>
