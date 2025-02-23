@@ -11,7 +11,8 @@
     "goal": "Obtenir un score Lighthouse de 90+ dans toutes les catégories",
     "movie": "/movie/NinaCarducci-Site.mp4",
     "github": "https://github.com/marc135169/OPC_Projet8_SEO",
-    "hosting": "https://opc-projet8-seo.vercel.app/"
+    "hosting": "https://opc-projet8-seo.vercel.app/",
+    "status" : false
   },
   {
     "title": "Circle Tower Defense",
@@ -25,6 +26,7 @@
     "goal": "Apprendre de nouvelles mécaniques de code",
     "movie": "/movie/CircleTD.mp4",
     "github": "https://github.com/marc135169/CircleSiegeTD",
-    "hosting": "https://miro.com/welcomeonboard/ZzBUSkFzVG0zMGsxL0ZJT0kwdkVxLzdtVFh0UHRRb1kvZkNVQkYxWVc0dUliZEsvTm5JOHNDYmtKZSt2azBxQmkvaWd5QzJ3R0hvY1dVWDVjTSttWHFjUStaeU1kSkprVFR3ZER1R2kyQ2ZLVkc3U3FTRWllQkFHdUwza0RlMytzVXVvMm53MW9OWFg5bkJoVXZxdFhRPT0hdjE=?share_link_id=26727833551"
+    "hosting": "https://miro.com/welcomeonboard/ZzBUSkFzVG0zMGsxL0ZJT0kwdkVxLzdtVFh0UHRRb1kvZkNVQkYxWVc0dUliZEsvTm5JOHNDYmtKZSt2azBxQmkvaWd5QzJ3R0hvY1dVWDVjTSttWHFjUStaeU1kSkprVFR3ZER1R2kyQ2ZLVkc3U3FTRWllQkFHdUwza0RlMytzVXVvMm53MW9OWFg5bkJoVXZxdFhRPT0hdjE=?share_link_id=26727833551",
+    "status" : true
   }
 ]
