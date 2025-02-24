@@ -77,7 +77,7 @@ export default function Header() {
                             <Link to={"/"} className="nav-link" onClick={handleTop}>Accueil</Link>
                         </li>
                         <li className="nav-item">
-                            <p className="nav-link" onClick={() => handleNavigation("aboutMe")}>A propos</p>
+                            <p className="nav-link no-select" onClick={() => handleNavigation("aboutMe")}>A propos</p>
                         </li>
                         <li className={`nav-item ${isActive("/project")}`}>
                             <Link to={"/project"} className="nav-link" onClick={handleTop}>Projets</Link>
@@ -86,7 +86,7 @@ export default function Header() {
                             <Link to={"/cv"} className="nav-link" onClick={handleTop}>CV</Link>
                         </li>
                         <li className={`nav-item ${animate ? "animate__animated animate__heartBeat" : ""}`}>
-                            <a className="nav-link " href="#" onClick={() => setToggleModal(true)}>Contact</a>
+                            <a className="nav-link" href="#" onClick={() => setToggleModal(true)}>Contact</a>
                         </li>
                     </ul>
                 </nav>
