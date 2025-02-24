@@ -15,6 +15,7 @@ import App from './App.tsx';
 import Home from './pages/Home.tsx';
 import Project from "./pages/Project.tsx";
 import CV from "./pages/CV.tsx";
+import NotFound from "./pages/NotFound.tsx";
 
 const router = createBrowserRouter([
     {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
                 path: '/cv',
                 element: <CV />,
             },
+            {
+                path: '*',
+                element: <NotFound />,
+            }
         ],
     },
 ]);
