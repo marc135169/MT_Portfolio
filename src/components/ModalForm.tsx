@@ -39,7 +39,7 @@ export default function ModalForm({toggleModal, setToggleModal}: ModalFormProps)
         e.preventDefault();
         setIsSending(true); // Indique que l'e-mail est en cours d'envoi
 
-        emailjs.send('service_fwl70hs', 'template_uxap1k9', formData)
+        emailjs.send('service_fwl70hs', 'template_ni0qvtx', formData)
             .then((result) => {
                 console.log('E-mail envoyé avec succès:', result.text);
                 alert('E-mail envoyé avec succès !');
