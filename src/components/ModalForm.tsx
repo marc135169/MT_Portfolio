@@ -1,11 +1,15 @@
 import React, {ChangeEvent, FormEvent, useState} from 'react';
+import emailjs from '@emailjs/browser'
 
-interface FormData {
+emailjs.init('9XPGB5dqKSBZ4B9U1');
+
+
+type EmailJSParams = {
     name: string;
     email: string;
     subject: string;
     message: string;
-}
+};
 
 type ModalFormProps = {
     toggleModal: boolean;
@@ -13,7 +17,7 @@ type ModalFormProps = {
 }
 
 export default function ModalForm({toggleModal, setToggleModal}: ModalFormProps) {
-    const [formData, setFormData] = useState<FormData>({
+    const [formData, setFormData] = useState<EmailJSParams>({
         name: '',
         email: '',
         subject: '',
@@ -28,18 +32,32 @@ export default function ModalForm({toggleModal, setToggleModal}: ModalFormProps)
         }));
     };
 
+    const [isSending, setIsSending] = useState(false);
+
+
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        setIsSending(true); // Indique que l'e-mail est en cours d'envoi
 
-        window.location.href = `mailto:marc.tetart@proton.me?subject=${formData.subject}&body=De: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
-
-        setFormData({
-            name: '',
-            email: '',
-            subject: '',
-            message: ''
-        });
-        setToggleModal(false);
+        emailjs.send('service_fwl70hs', 'template_uxap1k9', formData)
+            .then((result) => {
+                console.log('E-mail envoyé avec succès:', result.text);
+                alert('E-mail envoyé avec succès !');
+                setFormData({
+                    name: '',
+                    email: '',
+                    subject: '',
+                    message: ''
+                });
+            })
+            .catch((error) => {
+                console.error('Erreur lors de l\'envoi de l\'e-mail:', error.text);
+                alert('Une erreur est survenue lors de l\'envoi.');
+            })
+            .finally(() => {
+                setIsSending(false);
+                setToggleModal(false);
+            });
     };
 
     const handleClickOutside = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -109,9 +127,10 @@ export default function ModalForm({toggleModal, setToggleModal}: ModalFormProps)
 
                 <button
                     type="submit"
-                    className=" text-red-400 px-4 py-2 self-center rounded hover:bg-primary hover:text-quinary bg-quinary font-bold"
+                    disabled={isSending}
+                    className={`text-red-400 px-4 py-2 self-center rounded hover:bg-primary hover:text-quinary bg-quinary font-bold ${isSending ? 'opacity-50 cursor-not-allowed' : ''}`}
                 >
-                    Envoyer
+                    {isSending ? 'Envoi en cours...' : 'Envoyer'}
                 </button>
                 <i className="fa-solid fa-xmark absolute right-4 text-2xl" onClick={() => setToggleModal(false)}></i>
             </form>
