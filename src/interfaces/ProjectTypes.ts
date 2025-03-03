@@ -11,4 +11,4 @@ export interface ProjectInterface {
     github: string;
     hosting: string;
     status: boolean;
-} 
+}
