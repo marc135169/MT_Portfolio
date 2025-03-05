@@ -1,5 +1,6 @@
 import Banner from "../components/Banner.tsx";
 import {useEffect} from "react";
+import {toast} from "react-toastify";
 
 export default function Home() {
 
@@ -20,6 +21,19 @@ export default function Home() {
             window.removeEventListener("resize", updateImage);
         };
 
+    }, []);
+
+    useEffect(() => {
+        const hasVisited = localStorage.getItem("welcomeToast");
+
+        if (!hasVisited) {
+            toast.info("Bienvenue chez moi ! 🎉", {
+                autoClose: 3000,
+                position: "bottom-right",
+            });
+
+            localStorage.setItem("welcomeToast", "true");
+        }
     }, []);
 
     return (

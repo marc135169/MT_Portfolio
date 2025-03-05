@@ -93,3 +93,15 @@ body {
     -webkit-user-select: none;
     -moz-user-select: none;
 }
+
+.Toastify__toast-container {
+    max-width: 90vw !important;
+}
+
+@media (max-width: 470px) {
+    .Toastify__toast-container {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        right: auto !important;
+    }
+}
