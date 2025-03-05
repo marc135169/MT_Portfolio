@@ -27,7 +27,7 @@ export default function Home() {
         const hasVisited = localStorage.getItem("welcomeToast");
 
         if (!hasVisited) {
-            toast.info("Bienvenue chez moi ! 🎉", {
+            toast.info("Bienvenue chez moi !", {
                 autoClose: 3000,
                 position: "bottom-right",
             });

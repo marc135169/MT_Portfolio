@@ -105,3 +105,21 @@ body {
         right: auto !important;
     }
 }
+
+.Toastify__toast--info {
+    background-color: var(--color-primary) !important;
+    color: var(--color-secondary) !important;
+    font-weight: bold !important;
+}
+
+.Toastify__toast--info .Toastify__toast-icon svg {
+    fill: var(--color-secondary) !important;
+}
+
+.Toastify__close-button {
+    color: black !important;
+}
+
+.Toastify__progress-bar {
+    background-color: rgb(4, 39, 69) !important;
+}
