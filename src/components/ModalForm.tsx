@@ -1,5 +1,9 @@
 import React, {ChangeEvent, FormEvent, useState} from 'react';
 import emailjs from '@emailjs/browser'
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 emailjs.init('9XPGB5dqKSBZ4B9U1');
 
@@ -37,12 +41,15 @@ export default function ModalForm({toggleModal, setToggleModal}: ModalFormProps)
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        setIsSending(true); // Indique que l'e-mail est en cours d'envoi
+        setIsSending(true);
 
         emailjs.send('service_fwl70hs', 'template_ni0qvtx', formData)
             .then((result) => {
                 console.log('E-mail envoyé avec succès:', result.text);
-                alert('E-mail envoyé avec succès !');
+                toast.success('E-mail envoyé avec succès ! 🎉', {
+                    position: "top-right",
+                    autoClose: 3000,
+                });
                 setFormData({
                     name: '',
                     email: '',
@@ -52,7 +59,10 @@ export default function ModalForm({toggleModal, setToggleModal}: ModalFormProps)
             })
             .catch((error) => {
                 console.error('Erreur lors de l\'envoi de l\'e-mail:', error.text);
-                alert('Une erreur est survenue lors de l\'envoi.');
+                toast.error('Erreur lors de l\'envoi de l\'e-mail 😞', {
+                    position: "top-right",
+                    autoClose: 3000,
+                });
             })
             .finally(() => {
                 setIsSending(false);
